@@ -1,0 +1,5 @@
+name: EarthRidgeAddon
+version: 1.0.0
+author: temmieh0i
+main: com.avatar.bending.abilities.EarthRidge
+depend: [ProjectKorra]
