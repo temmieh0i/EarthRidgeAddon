@@ -10,24 +10,26 @@
             <id>spigot-repo</id>
             <url>https://spigotmc.org</url>
         </repository>
-        <!-- ProjectKorra Repository Placeholder -->
+        <!-- Maven Central Portal for modern ProjectKorra builds -->
         <repository>
-            <id>jitpack.io</id>
-            <url>https://jitpack.io</url>
+            <id>central</id>
+            <url>https://apache.org</url>
         </repository>
     </repositories>
 
     <dependencies>
+        <!-- Spigot Framework -->
         <dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot-api</artifactId>
             <version>1.16.5-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
+        <!-- Official ProjectKorra Core -->
         <dependency>
-            <groupId>com.github.ProjectKorra</groupId>
-            <artifactId>ProjectKorra</artifactId>
-            <version>1.9.2</version>
+            <groupId>com.projectkorra</groupId>
+            <artifactId>projectkorra</artifactId>
+            <version>1.12.0</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>
@@ -39,8 +41,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.1</version>
                 <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
+                    <source>17</source>
+                    <target>17</target>
                 </configuration>
             </plugin>
         </plugins>
