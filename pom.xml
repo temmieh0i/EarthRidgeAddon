@@ -5,36 +5,31 @@
     <version>1.0.0</version>
 
     <repositories>
-        <!-- Official SpigotMC Nexus Repository -->
+        <!-- Spigot Repository -->
         <repository>
-            <id>spigotmc-repo</id>
+            <id>spigot-repo</id>
             <url>https://spigotmc.org</url>
         </repository>
-        <!-- Mojang Libraries Repository -->
+        <!-- Official ProjectKorra Maven Repository -->
         <repository>
-            <id>minecraft-repo</id>
-            <url>https://minecraft.net</url>
-        </repository>
-        <!-- JitPack Cloud Storage for ProjectKorra -->
-        <repository>
-            <id>jitpack.io</id>
-            <url>https://jitpack.io</url>
+            <id>projectkorra-repo</id>
+            <url>https://projectkorra.com</url>
         </repository>
     </repositories>
 
     <dependencies>
-        <!-- Spigot Core Framework -->
+        <!-- Spigot API Framework -->
         <dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot-api</artifactId>
             <version>1.16.5-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
-        <!-- ProjectKorra Core via JitPack -->
+        <!-- Official ProjectKorra Core -->
         <dependency>
-            <groupId>com.github.ProjectKorra</groupId>
-            <artifactId>ProjectKorra</artifactId>
-            <version>v1.9.3</version>
+            <groupId>com.projectkorra</groupId>
+            <artifactId>projectkorra</artifactId>
+            <version>1.11.2</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>
