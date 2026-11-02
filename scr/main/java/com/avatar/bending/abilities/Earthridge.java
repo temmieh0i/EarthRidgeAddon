@@ -7,6 +7,7 @@ import org.bukkit.entity.LivingEntity;
 import org.bukkit.entity.Player;
 import org.bukkit.util.Vector;
 
+import com.projectkorra.projectkorra.BendingPlayer;
 import com.projectkorra.projectkorra.GeneralMethods;
 import com.projectkorra.projectkorra.ability.AddonAbility;
 import com.projectkorra.projectkorra.ability.EarthAbility;
@@ -73,7 +74,11 @@ public class EarthRidge extends EarthAbility implements AddonAbility {
                 this.direction = player.getLocation().getDirection().setY(0).normalize().multiply(speed);
                 this.fired = true;
                 
-                bUser.getCooldowns().put(getName(), cooldown);
+                // Fixed modern cooldown registration
+                BendingPlayer bPlayer = BendingPlayer.getBendingPlayer(player);
+                if (bPlayer != null) {
+                    bPlayer.addCooldown(this);
+                }
                 return; 
             }
 
