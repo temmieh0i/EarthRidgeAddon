@@ -5,17 +5,17 @@
     <version>1.0.0</version>
 
     <repositories>
-        <!-- Corrected SpigotMC Nexus Hub -->
+        <!-- Official SpigotMC Nexus Repository -->
         <repository>
             <id>spigotmc-repo</id>
             <url>https://spigotmc.org</url>
         </repository>
-        <!-- Corrected Mojang Libraries Mirror -->
+        <!-- Mojang Libraries Repository -->
         <repository>
             <id>minecraft-repo</id>
             <url>https://minecraft.net</url>
         </repository>
-        <!-- JitPack Cloud Storage Mirror -->
+        <!-- JitPack Cloud Storage for ProjectKorra -->
         <repository>
             <id>jitpack.io</id>
             <url>https://jitpack.io</url>
@@ -23,14 +23,14 @@
     </repositories>
 
     <dependencies>
-        <!-- Spigot Framework Core API -->
+        <!-- Spigot Core Framework -->
         <dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot-api</artifactId>
             <version>1.16.5-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
-        <!-- ProjectKorra via JitPack Snapshot Pipeline -->
+        <!-- ProjectKorra Core via JitPack -->
         <dependency>
             <groupId>com.github.ProjectKorra</groupId>
             <artifactId>ProjectKorra</artifactId>
