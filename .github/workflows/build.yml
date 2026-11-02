@@ -21,4 +21,3 @@ jobs:
         with:
           name: EarthRidgeAddon
           path: target/*.jar
-
