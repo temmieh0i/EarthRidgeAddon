@@ -5,22 +5,22 @@
     <version>1.0.0</version>
 
     <repositories>
-        <!-- Official Spigot Snapshot Mirror -->
+        <!-- Corrected Official SpigotMC Nexus Snapshots Server -->
         <repository>
-            <id>spigot-repo</id>
+            <id>spigotmc-repo</id>
             <url>https://spigotmc.org</url>
         </repository>
     </repositories>
 
     <dependencies>
-        <!-- Spigot Core API -->
+        <!-- Spigot Framework Core API -->
         <dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot-api</artifactId>
             <version>1.16.5-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
-        <!-- Modern ProjectKorra Core inside Maven Central -->
+        <!-- Official ProjectKorra Core Release inside Maven Central -->
         <dependency>
             <groupId>com.projectkorra</groupId>
             <artifactId>projectkorra</artifactId>
