@@ -4,23 +4,15 @@
     <artifactId>EarthRidgeAddon</artifactId>
     <version>1.0.0</version>
 
-    <repositories>
-        <!-- Corrected Official SpigotMC Nexus Snapshots Server -->
-        <repository>
-            <id>spigotmc-repo</id>
-            <url>https://spigotmc.org</url>
-        </repository>
-    </repositories>
-
     <dependencies>
-        <!-- Spigot Framework Core API -->
+        <!-- Spigot Core API loaded directly from Maven Central -->
         <dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot-api</artifactId>
             <version>1.16.5-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
-        <!-- Official ProjectKorra Core Release inside Maven Central -->
+        <!-- ProjectKorra Core loaded directly from Maven Central -->
         <dependency>
             <groupId>com.projectkorra</groupId>
             <artifactId>projectkorra</artifactId>
