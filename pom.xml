@@ -5,12 +5,12 @@
     <version>1.0.0</version>
 
     <repositories>
-        <!-- Spigot Repo -->
+        <!-- Hub Spigot MC Repo -->
         <repository>
             <id>spigot-repo</id>
             <url>https://spigotmc.org</url>
         </repository>
-        <!-- JitPack Backup Portal for ProjectKorra -->
+        <!-- JitPack Cloud Storage -->
         <repository>
             <id>jitpack.io</id>
             <url>https://jitpack.io</url>
@@ -18,18 +18,18 @@
     </repositories>
 
     <dependencies>
-        <!-- Spigot API -->
+        <!-- Spigot Core Framework -->
         <dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot-api</artifactId>
             <version>1.16.5-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
-        <!-- ProjectKorra via JitPack -->
+        <!-- Stable ProjectKorra Core Release -->
         <dependency>
             <groupId>com.github.ProjectKorra</groupId>
             <artifactId>ProjectKorra</artifactId>
-            <version>1.11.2</version>
+            <version>1.9.3</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>
